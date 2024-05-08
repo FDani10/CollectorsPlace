@@ -1,0 +1,2 @@
+# CollectorsPlace
+Szoftverfejlesztés szakképesítés mestermunka
