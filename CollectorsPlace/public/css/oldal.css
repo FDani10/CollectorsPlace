@@ -1,0 +1,565 @@
+body{
+    background-color: gray;
+}
+
+/* Navbar */
+.nav-link{
+    color: white;
+}
+
+.navbar_scrolled{
+    background-color: #656565;
+}
+
+.navbar_not_scrolled{
+    background-color: transparent;
+}
+
+.dropdown-item{
+    width: auto;
+}
+
+.logoBig{
+    margin-left: 2vw;
+    width: 120px;
+    height: 80px;
+    border-radius: 10px;
+    transition: 0.8s;
+}
+
+.bejelentkezesButton{
+    color: black;
+    background-color: lightgreen;
+    transition: 0.5s;
+}
+.bejelentkezesButton:hover{
+    color: white;
+    background-color: #487448;
+}
+
+.regisztracioButton{
+    color: black;
+    background-color: #ff4e4e;
+    transition: 0.5s;
+}
+.regisztracioButton:hover{
+    color: white;
+    background-color: #a83232;
+}
+
+.profilePic{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 5vh;
+    width: 5vh;
+}
+
+.messagesIcon{
+    margin-right: 15px;
+    margin-top: 0.2rem;
+}
+
+/* Home Page */
+@font-face {
+    font-family: AntonTTF;
+    src: url('/fonts/anton.ttf');
+}
+
+@font-face {
+    font-family: Aspergit;
+    src: url('/fonts/aspergit.otf');
+}
+
+.homeSzoveg{
+    font-family: AntonTTF;
+    font-size: 40px;
+}
+
+.homeSzovegP{
+    font-family: Aspergit;
+    font-size: 20px;
+}
+
+.homeImg{
+    width: 100vw;
+    height: 70vh;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.centeredSzovegImage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Register Page */
+.logoRegister{
+    width: 15vw;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+    margin-top: -2vh;
+}
+
+.regisztracioButton2{
+    color: black;
+    background-color: #ff4e4e;
+    transition: 0.5s;
+    width: 10vw;
+    height: 6vh;
+    font-size: 1vw;
+}
+.regisztracioButton2:hover{
+    color: white;
+    background-color: #a83232;
+}
+
+
+/* Login Page */
+
+
+
+/* Offer Create */
+.textarea_cards{
+    width: 16vw;
+    height: 10vh;
+    resize: none;
+    margin-top: -1vh;
+}
+
+/* See all offers */
+.idk {
+    text-align: center;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+    box-shadow: 0 0 25px white;
+    width: 30em;
+    border-radius: 2em;
+    margin-top: 3em;
+}
+
+.erdekelButtonDiv{
+    margin-top: 1vh;
+}
+
+.rowMeg .col-3+.col {
+    border-left: 2px solid white;
+}
+
+.rowMeg .col+.col {
+    border-left: 2px solid white;
+}
+
+.rowMeg {
+    height: 11em;
+    overflow: hidden;
+}
+
+.rowMeg .col {
+    height: 11em;
+    overflow-y: scroll;
+    word-wrap:break-word;
+}
+
+.profilePicCsere{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 8vh;
+    width: 8vh;
+    border: 2px solid black;
+}
+
+.stars {
+    margin-top: 0.5vh;
+    font-size: 60%;
+    letter-spacing: 0;
+}
+
+.profileName {
+    margin-top: -10%;
+    word-break: break-word;
+}
+
+.themename{
+    font-size: 10px;
+}
+
+.telepules{
+    margin-top: 2vh;
+    font-size: 14px;
+}
+
+.col h4 {
+    margin-top: 5%;
+}
+
+.col p {
+    margin-top: 10%;
+    font-size: 15px;
+    resize: both;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(39, 39, 39);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0);
+}
+
+
+/* Change profile pic */
+.profilePicShower{
+    margin-left: auto;
+    margin-right: auto;
+    height: 20vh;
+    width: 10vw;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.profilePicImg{
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    height: calc(20vh - 4px);
+    width: calc(10vw - 4px);
+    border-radius: 50%;
+}
+
+.profilePicP{
+    margin-top: -15vh;
+    font-size: 2vh;
+}
+
+/* Users */
+.friendDiv{
+    margin-right: auto;
+    width: 30px;
+    visibility: hidden;
+}
+.friendDiv label{
+    margin-top: -0.4vh;
+    margin-left: -0.7vw;
+    visibility: visible;
+}
+
+.popup{
+    border: 2px solid black;
+    width: 400px;
+    background-color: #fff ;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.open-popup{
+    visibility: visible;
+    top: 30%;
+    transform: translate(-50%,50%) scale(1);
+}
+
+.star-widget input{
+    display: none;
+}
+
+.star-widget label{
+    font-size: 40px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+}
+
+.star-widget input:not(:checked) ~ label:hover,
+.star-widget input:not(:checked) ~ label:hover ~ label{
+    color: #fd4;
+}
+
+input:checked ~ label{
+    color: #fd4;
+}
+
+.xbut{
+    border: white;
+    background-color: white;
+    font-size: 20px;
+}
+
+.xbutdiv{
+    margin-left: 17vw;
+}
+
+.unclickable{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255,.2);
+}
+
+.fadeinpls{
+    display: flex;
+}
+
+.ertekeles_szam{
+    color: #444;
+    margin-top: -2vh;
+    font-style: italic;
+}
+
+.keresesekForm{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: black;
+}
+
+
+
+
+
+/* Messages */
+.messageBox{
+    height: 80vh;
+}
+
+.messageBox .col-3{
+    background-color: gray;
+}
+
+.messageBox .col-9{
+    background-color: white;
+    border: 2px solid black;
+}
+
+.chatbubble{
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+}
+
+.chatbubble p{
+    background: #42a5f5;
+    color: white;
+    border-radius: 20px 20px 3px 20px;
+    display: block;
+    max-width: 20vw;
+    padding: 7px 13px 7px 13px;
+    margin-left: auto;
+}
+
+.chatbubbleReceive{
+    margin-top: 5px;
+    width: auto;
+    height: auto;
+}
+
+.chatbubbleReceive p{
+    background: #f1f1f1;
+    color: black;
+    border-radius: 20px 20px 20px 20px;
+    display: block;
+    max-width: 20vw;
+    padding: 7px 13px 7px 13px;
+}
+
+.personChat{
+    background-color: white;
+    height: 100px;
+    width: auto;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.personChat:hover{
+    background-color: lightgray;
+}
+
+.personChat + .personChat{
+    margin-top: 10px;
+}
+
+.profilePicMessages{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 6vh;
+    width: 6vh;
+    margin-left: 10px;
+}
+
+.messagesNev{
+    font-size: 20px;
+    margin-top: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    padding-left: 15px;
+}
+
+.chatmessages{
+    width: auto;
+    height:89%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.message_footer{
+    margin-top: -1.6rem;
+    margin-left: 1rem;
+}
+
+.message_footer2{
+    float: right;
+    margin-top: -1.6rem;
+    margin-right: 1rem;
+}
+
+.timeMessage{
+    --bs-text-opacity: 1;
+    color: #bfccdf;
+    font-size: 0.7em;
+}
+
+.chattextter{
+    background-color: wheat;
+    margin-top: auto;
+    width: auto;
+    height: 10%;
+    border: 2px solid black;
+}
+
+.chattextter input{
+    margin-top: 20px;
+}
+
+.formTextBar{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: lightgray;
+    height: 7vh;
+    border-radius: 60px;
+}
+
+.formTextBar input{
+    border: 0px;
+    background-color: lightgray;
+    color: black;
+    width: 60%;
+    height: 30px;
+    margin-top: 1rem;
+    margin-left: 10%;
+}
+
+.formTextBar .btn{
+    border-radius: 100%;
+    width: 3.5rem;
+    height: 3.5rem;
+    float: right;
+    margin-right: 1%;
+    margin-top: 0.5%;
+}
+
+@media screen and (max-width: 1500px){
+    .formTextBar input{
+        margin-top: 0.5rem;
+    }
+    .formTextBar .btn{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 2%;
+        margin-top: 1%;
+    }
+    .formTextBar .btn label{
+        margin-left: -0.4rem;
+    }
+}
+
+.formTextBar input:focus{
+    border: none;
+    outline: none;
+}
+
+
+
+.personsChatOnleft{
+    background-color: gray;
+}
+
+.lastTexts{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-top: -1rem;
+    font-size: 0.8rem;
+    padding-left: 15px;
+    color: gray;
+}
+
+.dayOfTheWeek{
+    color: gray;
+    text-align: center;
+}
+
+.adminFunction{
+    width: 100%;
+    text-align: left;
+}
+
+.adminFunction:hover{
+    background-color: darkgray;
+}
+
+/* Own profile */
+.profileData{
+    background-color: #3f3f3f;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userDatas h3{
+    margin-bottom: 0.2rem;
+}
+
+.profilePicOwnProfile{
+    object-fit: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.userInfoInputField{
+    border: none;
+}
